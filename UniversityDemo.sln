@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityDemo", "UniversityDemo\UniversityDemo.csproj", "{7BDF058D-E49E-4BCB-B7E6-289A714BDC86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversityDemo", "UniversityDemo\UniversityDemo.csproj", "{7BDF058D-E49E-4BCB-B7E6-289A714BDC86}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{F11023D6-5486-4503-A322-783A43035A23}"
 EndProject
@@ -15,13 +15,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra.Data", "Infra.Data", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{F2944321-6627-4B31-9D0E-038E6A1154E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityDemo.Application", "UniversityDemo.Application\UniversityDemo.Application.csproj", "{A1896DCF-2CAD-44B3-B758-D00C70F603E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversityDemo.Application", "UniversityDemo.Application\UniversityDemo.Application.csproj", "{A1896DCF-2CAD-44B3-B758-D00C70F603E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityDemo.Domain", "UniversityDemo.Domain\UniversityDemo.Domain.csproj", "{99B63D6A-D136-49CA-827C-911F27DA9587}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversityDemo.Domain", "UniversityDemo.Domain\UniversityDemo.Domain.csproj", "{99B63D6A-D136-49CA-827C-911F27DA9587}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityDemo.Infra.Data", "UniversityDemo.Infra.Data\UniversityDemo.Infra.Data.csproj", "{D5F77C69-FF82-4A15-8622-1D58D47B9D04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversityDemo.Infra.Data", "UniversityDemo.Infra.Data\UniversityDemo.Infra.Data.csproj", "{D5F77C69-FF82-4A15-8622-1D58D47B9D04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityDemo.Infra.IoC", "UniversityDemo.Infra.IoC\UniversityDemo.Infra.IoC.csproj", "{D60ED5E1-6D6B-4240-BC4D-B6B58DDDC229}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversityDemo.Infra.IoC", "UniversityDemo.Infra.IoC\UniversityDemo.Infra.IoC.csproj", "{D60ED5E1-6D6B-4240-BC4D-B6B58DDDC229}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{93ECCB90-F888-41F4-89EA-5212480E9306}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra.Bus", "Infra.Bus", "{6AF55AD9-F791-4046-9EE9-96EB5DB189C6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversityDemo.Infra.Bus", "UniversityDemo.Infra.Bus\UniversityDemo.Infra.Bus.csproj", "{40865C0E-7E33-4369-AE50-EB43814A7FF2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversityDemo.Domain.Core", "UniversityDemo.Domain.Core\UniversityDemo.Domain.Core.csproj", "{BF30C071-325D-421A-A1A8-B40C217FD440}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityDemo.Api", "UniversityDemo.Api\UniversityDemo.Api.csproj", "{81D7B620-61AA-4EF0-803D-8EBF1A0CAF7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +59,18 @@ Global
 		{D60ED5E1-6D6B-4240-BC4D-B6B58DDDC229}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D60ED5E1-6D6B-4240-BC4D-B6B58DDDC229}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D60ED5E1-6D6B-4240-BC4D-B6B58DDDC229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40865C0E-7E33-4369-AE50-EB43814A7FF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40865C0E-7E33-4369-AE50-EB43814A7FF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40865C0E-7E33-4369-AE50-EB43814A7FF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40865C0E-7E33-4369-AE50-EB43814A7FF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF30C071-325D-421A-A1A8-B40C217FD440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF30C071-325D-421A-A1A8-B40C217FD440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF30C071-325D-421A-A1A8-B40C217FD440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF30C071-325D-421A-A1A8-B40C217FD440}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81D7B620-61AA-4EF0-803D-8EBF1A0CAF7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81D7B620-61AA-4EF0-803D-8EBF1A0CAF7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81D7B620-61AA-4EF0-803D-8EBF1A0CAF7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81D7B620-61AA-4EF0-803D-8EBF1A0CAF7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +81,9 @@ Global
 		{99B63D6A-D136-49CA-827C-911F27DA9587} = {D500C17F-A15A-4089-87A9-14197592BCAF}
 		{D5F77C69-FF82-4A15-8622-1D58D47B9D04} = {48A322E1-C48C-4F83-BF49-24545B1A6840}
 		{D60ED5E1-6D6B-4240-BC4D-B6B58DDDC229} = {97C006D6-9CB8-4626-A020-9C25D64349C9}
+		{40865C0E-7E33-4369-AE50-EB43814A7FF2} = {6AF55AD9-F791-4046-9EE9-96EB5DB189C6}
+		{BF30C071-325D-421A-A1A8-B40C217FD440} = {D500C17F-A15A-4089-87A9-14197592BCAF}
+		{81D7B620-61AA-4EF0-803D-8EBF1A0CAF7D} = {93ECCB90-F888-41F4-89EA-5212480E9306}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9E5CE2D-254F-4EE4-9C2A-634DFE2F32D0}
