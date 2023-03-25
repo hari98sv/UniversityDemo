@@ -29,6 +29,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra.Bus", "Infra.Bus", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityDemo.Infra.Bus", "UniversityDemo.Infra.Bus\UniversityDemo.Infra.Bus.csproj", "{40865C0E-7E33-4369-AE50-EB43814A7FF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityDemo.Domain.Core", "UniversityDemo.Domain.Core\UniversityDemo.Domain.Core.csproj", "{BF30C071-325D-421A-A1A8-B40C217FD440}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{40865C0E-7E33-4369-AE50-EB43814A7FF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40865C0E-7E33-4369-AE50-EB43814A7FF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40865C0E-7E33-4369-AE50-EB43814A7FF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF30C071-325D-421A-A1A8-B40C217FD440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF30C071-325D-421A-A1A8-B40C217FD440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF30C071-325D-421A-A1A8-B40C217FD440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF30C071-325D-421A-A1A8-B40C217FD440}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,6 +76,7 @@ Global
 		{D5F77C69-FF82-4A15-8622-1D58D47B9D04} = {48A322E1-C48C-4F83-BF49-24545B1A6840}
 		{D60ED5E1-6D6B-4240-BC4D-B6B58DDDC229} = {97C006D6-9CB8-4626-A020-9C25D64349C9}
 		{40865C0E-7E33-4369-AE50-EB43814A7FF2} = {6AF55AD9-F791-4046-9EE9-96EB5DB189C6}
+		{BF30C071-325D-421A-A1A8-B40C217FD440} = {D500C17F-A15A-4089-87A9-14197592BCAF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9E5CE2D-254F-4EE4-9C2A-634DFE2F32D0}
