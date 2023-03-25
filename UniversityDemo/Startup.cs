@@ -1,3 +1,4 @@
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -43,7 +44,7 @@ namespace UniversityDemo
             });
 
             services.AddControllersWithViews();
-
+            services.AddMediatR(typeof(Startup));
             RegisterServices(services);
         }
 
