@@ -14,7 +14,12 @@ namespace UniversityDemo.Infra.Bus
             _mediator = mediator;
         }
 
-        public Task SendCommand<T>(T command) where T : Command
+        public Task CreateCommand<T>(T command) where T : Command
+        {
+            return _mediator.Send(command);
+        }
+
+        public Task UpdateCommand<T>(T command) where T : Command
         {
             return _mediator.Send(command);
         }

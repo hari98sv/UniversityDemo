@@ -8,6 +8,7 @@ using UniversityDemo.Application.ViewModels;
 using UniversityDemo.Domain.Commands;
 using UniversityDemo.Domain.Core.Bus;
 using UniversityDemo.Domain.Interfaces;
+using UniversityDemo.Domain.Models;
 
 namespace UniversityDemo.Application.Services
 {
@@ -29,15 +30,48 @@ namespace UniversityDemo.Application.Services
                                             courseViewModel.Description,
                                             courseViewModel.ImageUri);
 
-            _bus.SendCommand(createCourseCommand);
+            _bus.CreateCommand(createCourseCommand);
+        }
+
+        public void Update(CourseViewModel courseViewModel)
+        {
+            var updateCourseCommand = new UpdateCourseCommand(
+                                            courseViewModel.Id,
+                                            courseViewModel.Name,
+                                            courseViewModel.Description,
+                                            courseViewModel.ImageUri);
+
+            _bus.UpdateCommand(updateCourseCommand);
         }
 
         public CourseViewModel GetCourses()
         {
-            return new CourseViewModel()
+            var res = new CourseViewModel()
             {
                 Courses = _courseRepository.GetCourses()
             };
+
+            return res; 
+        }
+        
+        public CourseViewModel GetCourseById(int id)
+        {
+            var course = _courseRepository.GetCourseByID(id);
+
+            var res = new CourseViewModel
+            {
+                Id = course.Id,
+                Name = course.Name,
+                Description = course.Description,
+                ImageUri = course.ImageUri
+            };
+
+            return res; 
+        }
+
+        public void DeleteCourse(int id)
+        {
+            _courseRepository.DeleteCourse(id);
         }
     }
 }

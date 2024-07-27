@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32228.343
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversityDemo", "UniversityDemo\UniversityDemo.csproj", "{7BDF058D-E49E-4BCB-B7E6-289A714BDC86}"
 EndProject
@@ -31,7 +31,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversityDemo.Infra.Bus", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversityDemo.Domain.Core", "UniversityDemo.Domain.Core\UniversityDemo.Domain.Core.csproj", "{BF30C071-325D-421A-A1A8-B40C217FD440}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityDemo.Api", "UniversityDemo.Api\UniversityDemo.Api.csproj", "{81D7B620-61AA-4EF0-803D-8EBF1A0CAF7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversityDemo.Api", "UniversityDemo.Api\UniversityDemo.Api.csproj", "{81D7B620-61AA-4EF0-803D-8EBF1A0CAF7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

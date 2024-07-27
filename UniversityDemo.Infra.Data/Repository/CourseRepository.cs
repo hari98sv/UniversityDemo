@@ -24,9 +24,30 @@ namespace UniversityDemo.Infra.Data.Repository
             _context.SaveChanges();
         }
 
+        public void Update(Course course)
+        {
+            _context.Courses.Update(course);
+            _context.SaveChanges();
+        }
+        
+        public void DeleteCourse(int id)
+        {
+            var course = _context.Courses.FirstOrDefault(c => c.Id == id);
+            if (course != null)
+            {
+                _context.Courses.Remove(course);
+                _context.SaveChanges();
+            }
+        }
+
         public IEnumerable<Course> GetCourses()
         {
             return _context.Courses;
+        }
+        
+        public Course GetCourseByID(int id)
+        {
+            return _context.Courses.FirstOrDefault( c => c.Id == id);
         }
     }
 }

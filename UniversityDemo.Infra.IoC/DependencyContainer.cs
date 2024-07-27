@@ -25,7 +25,8 @@ namespace UniversityDemo.Infra.IoC
             services.AddScoped<IMediatorHandler, InMemoryBus>();
 
             // Domain Handlers
-            services.AddScoped<IRequestHandler<CreateCourseCommand, bool>, CourseCommandHandler>();
+            services.AddScoped<IRequestHandler<CreateCourseCommand, bool>, CreateCourseCommandHandler>();
+            services.AddScoped<IRequestHandler<UpdateCourseCommand, bool>, UpdateCourseCommandHandler>();
 
             // Application layer
             services.AddScoped<ICourseService, CourseService>();

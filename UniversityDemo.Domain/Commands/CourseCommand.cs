@@ -9,6 +9,7 @@ namespace UniversityDemo.Domain.Commands
 {
     public abstract class CourseCommand : Command
     {
+        public int Id { get; set; }
         public string Name { get; protected set; }
         public string Description { get; protected set; }
         public string ImageUri { get; protected set; }
