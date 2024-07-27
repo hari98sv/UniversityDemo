@@ -11,11 +11,11 @@ using UniversityDemo.Domain.Models;
 
 namespace UniversityDemo.Domain.CommandHandlers
 {
-    public class CreateCourseCommandHandler : IRequestHandler<CourseCommand, bool>
+    public class UpdateCourseCommandHandler : IRequestHandler<CourseCommand, bool>
     {
         private readonly ICourseRepository _courseRepository;
 
-        public CreateCourseCommandHandler(ICourseRepository courseRepository)
+        public UpdateCourseCommandHandler(ICourseRepository courseRepository)
         {
             _courseRepository = courseRepository;
         }
@@ -24,12 +24,13 @@ namespace UniversityDemo.Domain.CommandHandlers
         {
             var course = new Course()
             {
+                Id = request.Id,
                 Name = request.Name,
                 Description = request.Description,
                 ImageUri = request.ImageUri
             };
 
-            _courseRepository.Add(course);
+            _courseRepository.Update(course);
 
             return Task.FromResult(true);
 

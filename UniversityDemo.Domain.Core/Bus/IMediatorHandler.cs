@@ -9,6 +9,7 @@ namespace UniversityDemo.Domain.Core.Bus
 {
     public interface IMediatorHandler
     {
-        Task SendCommand<T>(T command) where T : Command;
+        Task CreateCommand<T>(T command) where T : Command;
+        Task UpdateCommand<T>(T command) where T : Command;
     }
 }
